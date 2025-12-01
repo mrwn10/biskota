@@ -58,6 +58,16 @@ p {
     margin-bottom: 1rem;
 }
 
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -206,19 +216,21 @@ p {
     background-color: var(--maroon);
 }
 
-/* Main Content - PERFECTLY BALANCED POSITIONING */
+/* Main Content */
 .main-content {
-    padding: 140px 0 80px;
+    padding-top: 80px;
+}
+
+/* About Hero Section */
+.about-hero {
     background: linear-gradient(135deg, var(--biscuit-light) 0%, var(--biscuit) 100%);
+    padding: 100px 0 80px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
-.main-content::before {
+.about-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -229,52 +241,406 @@ p {
     z-index: 0;
 }
 
-.coming-soon {
+.hero-content {
     position: relative;
     z-index: 1;
-    width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-.coming-soon-content {
-    background: var(--white);
-    border-radius: 20px;
-    box-shadow: var(--shadow-lg);
-    padding: 60px 40px;
-    width: 100%;
-}
-
-.coming-soon h1 {
-    font-size: 3rem;
+.about-hero h1 {
+    font-size: 3.5rem;
     color: var(--maroon);
     margin-bottom: 1.5rem;
     line-height: 1.1;
 }
 
-.coming-soon p {
-    font-size: 1.2rem;
+.about-hero p {
+    font-size: 1.3rem;
     color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Image Container Styles */
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 3px solid var(--biscuit-light);
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--maroon-light);
+}
+
+.responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition-slow);
+}
+
+.image-container:hover .responsive-image {
+    transform: scale(1.05);
+}
+
+/* Brand Story Section */
+.brand-story {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-content h2 {
+    font-size: 2.5rem;
+    color: var(--maroon);
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.mission-statement {
+    background-color: var(--biscuit-light);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid var(--maroon);
+    margin-top: 2rem;
+}
+
+.mission-statement h3 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.mission-statement p {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: var(--dark-gray);
+}
+
+.story-image .image-container {
+    aspect-ratio: 4/3;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Health Benefits Section */
+.health-benefits {
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.health-benefits h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid var(--biscuit-light);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--maroon-light);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.benefit-card p {
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Flavor Commitment Section */
+.flavor-commitment {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.flavor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.flavor-content h2 {
+    font-size: 2.5rem;
+    color: var(--maroon);
+    margin-bottom: 1.5rem;
+}
+
+.flavor-content p {
+    font-size: 1.1rem;
     margin-bottom: 2rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    color: var(--text-color);
 }
 
-.loading-spinner {
-    width: 50px;
-    height: 50px;
-    border: 4px solid var(--biscuit-light);
-    border-top: 4px solid var(--maroon);
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: spin 1s linear infinite;
+.flavor-image .image-container {
+    aspect-ratio: 3/4;
+    max-width: 100%;
+    height: auto;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.commitment-points {
+    margin-bottom: 2rem;
+}
+
+.commitment-item {
+    margin-bottom: 1.5rem;
+}
+
+.commitment-item h4 {
+    color: var(--maroon);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.commitment-item p {
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+.flavor-quote {
+    background-color: var(--biscuit-light);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--maroon);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+/* Location Section */
+.location-section {
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.location-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.map-container {
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.map-container .image-container {
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid var(--biscuit-light);
+}
+
+.location-info h3 {
+    color: var(--maroon);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-features h4 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.location-features ul {
+    list-style: none;
+}
+
+.location-features li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.location-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--maroon);
+    font-weight: bold;
+}
+
+/* Values Section */
+.values-section {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.values-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    background-color: var(--light-gray);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid var(--biscuit-light);
+}
+
+.value-card:hover {
+    background-color: var(--biscuit-light);
+    transform: translateY(-5px);
+    border-color: var(--maroon-light);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Team Section */
+.team-section {
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.founder-profile {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    align-items: start;
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    margin-top: 50px;
+}
+
+.founder-image .image-container {
+    aspect-ratio: 1/1;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--biscuit-light);
+}
+
+.founder-info h3 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.founder-info p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.founder-qualifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.qualification {
+    background-color: var(--biscuit-light);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--maroon);
+    font-weight: 500;
 }
 
 /* Footer */
@@ -363,7 +729,7 @@ p {
     font-size: 0.9rem;
 }
 
-/* ========== MOBILE RESPONSIVENESS - PERFECTLY BALANCED ========== */
+/* ========== MOBILE RESPONSIVENESS ========== */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -371,12 +737,23 @@ p {
         padding: 0 30px;
     }
     
-    .coming-soon {
-        max-width: 500px;
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .story-grid,
+    .flavor-grid {
+        gap: 40px;
+    }
+    
+    .founder-profile {
+        grid-template-columns: 250px 1fr;
+        gap: 40px;
+        padding: 40px;
     }
 }
 
-/* Mobile - PERFECTLY BALANCED POSITIONING */
+/* Mobile */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -449,31 +826,74 @@ p {
         color: var(--white);
     }
     
-    /* PERFECTLY BALANCED MAIN CONTENT FOR MOBILE */
-    .main-content {
-        padding: 120px 0 60px;
-        display: block;
+    /* Mobile Layout Adjustments */
+    .about-hero {
+        padding: 80px 0 60px;
     }
     
-    .coming-soon {
-        padding: 0 15px;
-        max-width: 100%;
+    .about-hero h1 {
+        font-size: 2.5rem;
     }
     
-    .coming-soon-content {
-        padding: 40px 30px;
-        margin: 0 auto;
-        max-width: 400px;
+    .about-hero p {
+        font-size: 1.1rem;
     }
     
-    .coming-soon h1 {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
+    .brand-story,
+    .health-benefits,
+    .flavor-commitment,
+    .location-section,
+    .values-section,
+    .team-section {
+        padding: 60px 0;
     }
     
-    .coming-soon p {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+    .story-grid,
+    .flavor-grid,
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .story-content h2,
+    .flavor-content h2,
+    .health-benefits h2,
+    .location-section h2,
+    .values-section h2,
+    .team-section h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .mission-statement {
+        padding: 25px;
+    }
+    
+    .benefits-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .benefit-card,
+    .value-card {
+        padding: 30px 20px;
+    }
+    
+    .founder-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    .founder-qualifications {
+        justify-content: center;
+    }
+    
+    .flavor-quote {
+        padding: 20px;
+        font-size: 1.1rem;
     }
     
     .logo-text {
@@ -483,60 +903,116 @@ p {
     .container {
         padding: 0 15px;
     }
+    
+    /* Mobile Image Adjustments */
+    .story-image .image-container,
+    .flavor-image .image-container,
+    .map-container .image-container {
+        aspect-ratio: 16/9;
+    }
+    
+    .founder-image .image-container {
+        aspect-ratio: 1/1;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Hide extra cards on mobile */
+    .benefit-card-desktop,
+    .value-card-desktop {
+        display: none;
+    }
+}
+
+/* Desktop - Show all cards */
+@media (min-width: 769px) {
+    .benefit-card-desktop,
+    .value-card-desktop {
+        display: block;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
-    .coming-soon {
-        padding: 0 10px;
+    .about-hero h1 {
+        font-size: 2rem;
     }
     
-    .coming-soon-content {
-        padding: 30px 20px;
-        max-width: 100%;
+    .about-hero p {
+        font-size: 1rem;
     }
     
-    .coming-soon h1 {
+    .brand-story,
+    .health-benefits,
+    .flavor-commitment,
+    .location-section,
+    .values-section,
+    .team-section {
+        padding: 50px 0;
+    }
+    
+    .story-content h2,
+    .flavor-content h2,
+    .health-benefits h2,
+    .location-section h2,
+    .values-section h2,
+    .team-section h2 {
         font-size: 1.8rem;
     }
     
-    .coming-soon p {
-        font-size: 0.95rem;
+    .benefit-card,
+    .value-card {
+        padding: 25px 15px;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
+    .founder-profile {
+        padding: 25px 20px;
+    }
+    
+    .mission-statement {
+        padding: 20px;
+    }
+    
+    .flavor-quote {
+        padding: 15px;
+        font-size: 1rem;
     }
     
     .container {
         padding: 0 10px;
-    }
-    
-    .main-content {
-        padding: 120px 0 40px;
     }
 }
 
 /* Extra Small Mobile */
 @media (max-width: 360px) {
-    .coming-soon-content {
-        padding: 25px 15px;
+    .about-hero h1 {
+        font-size: 1.8rem;
     }
     
-    .coming-soon h1 {
+    .story-content h2,
+    .flavor-content h2,
+    .health-benefits h2,
+    .location-section h2,
+    .values-section h2,
+    .team-section h2 {
         font-size: 1.6rem;
     }
     
-    .coming-soon p {
-        font-size: 0.9rem;
+    .benefits-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
     }
     
     .container {
         padding: 0 10px;
-    }
-    
-    .main-content {
-        padding: 120px 0 30px;
     }
 }
 
@@ -558,7 +1034,13 @@ p {
         background-color: var(--maroon);
     }
     
-    .coming-soon-content {
+    .benefit-card:hover,
+    .value-card:hover,
+    .image-container:hover {
+        transform: none;
+    }
+    
+    .image-container:hover .responsive-image {
         transform: none;
     }
 }
