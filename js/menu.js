@@ -65,67 +65,32 @@ const productsData = {
         },
         {
             id: 2,
-            name: "Protein Chocolate Chip Cookies",
-            description: "Classic chocolate chip cookies with a protein boost.",
+            name: "Biscoff with Kataifi Brownies",
+            description: "Rich brownies layered with crunchy kataifi and Biscoff for a sweet, textured bite.",
             category: "Biscuits & Cookies",
-            image: "../img/food1.jpg"
+            image: "../img/food6.jpg"
         },
         {
             id: 3,
-            name: "Oatmeal Raisin Biscuits",
-            description: "Hearty oatmeal biscuits with plump raisins and cinnamon.",
+            name: "Double Chocolate Protein Cookies",
+            description: "Soft, chocolate-packed cookies with an extra protein boost in every bite.",
             category: "Biscuits & Cookies",
-            image: "../img/food3.jpg"
+            image: "../img/food7.jpg"
         },
         {
             id: 4,
-            name: "Almond Protein Biscuits",
-            description: "Crunchy almond biscuits packed with protein goodness.",
+            name: "White Chocolate Walnut Protein Cookies",
+            description: "Chewy protein cookies studded with creamy white chocolate and crunchy walnuts.",
             category: "Biscuits & Cookies",
-            image: "../img/food1.jpg"
+            image: "../img/food8.jpg"
         },
         {
             id: 5,
-            name: "Double Chocolate Cookies",
-            description: "Rich chocolate cookies with double the chocolate goodness.",
+            name: "Nutty Road Protein Cookies",
+            description: "Protein-rich cookies loaded with nuts and chocolate for a crunchy, satisfying treat.",
             category: "Biscuits & Cookies",
-            image: "../img/food2.jpg"
+            image: "../img/food9.jpg"
         },
-        {
-            id: 6,
-            name: "Peanut Butter Protein Bites",
-            description: "Energy-packed bites with natural peanut butter flavor.",
-            category: "Biscuits & Cookies",
-            image: "../img/food3.jpg"
-        },
-        {
-            id: 7,
-            name: "Coconut Macaroons",
-            description: "Light and chewy coconut treats with protein enrichment.",
-            category: "Biscuits & Cookies",
-            image: "../img/food1.jpg"
-        },
-        {
-            id: 8,
-            name: "Matcha Green Tea Cookies",
-            description: "Antioxidant-rich matcha cookies with subtle sweetness.",
-            category: "Biscuits & Cookies",
-            image: "../img/food2.jpg"
-        },
-        {
-            id: 9,
-            name: "Hazelnut Crunch Biscuits",
-            description: "Crunchy biscuits with roasted hazelnuts and protein.",
-            category: "Biscuits & Cookies",
-            image: "../img/food3.jpg"
-        },
-        {
-            id: 10,
-            name: "Lemon Zest Cookies",
-            description: "Zesty lemon cookies with a refreshing citrus twist.",
-            category: "Biscuits & Cookies",
-            image: "../img/food1.jpg"
-        }
     ],
     pastries: [
         {
@@ -137,139 +102,55 @@ const productsData = {
         },
         {
             id: 12,
-            name: "Protein Croissants",
-            description: "Flaky, buttery croissants with added protein.",
+            name: "Dubai Chocolate Brownies",
+            description: "Decadent, fudgy chocolate brownies with a rich, melt-in-your-mouth texture.",
             category: "Pastries & Breads",
-            image: "../img/food2.jpg"
+            image: "../img/food4.jpg"
         },
         {
             id: 13,
-            name: "Almond Protein Buns",
-            description: "Soft buns with almond flour and protein enrichment.",
+            name: "Cheesy Lemon Mini Cake",
+            description: "A soft, zesty mini cake with a creamy cheese twist for a bright, tangy bite.",
             category: "Pastries & Breads",
-            image: "../img/food3.jpg"
+            image: "../img/food10.jpg"
         },
         {
             id: 14,
-            name: "Nutty Road Loaf",
-            description: "A nutrient-packed loaf loaded with wholesome nuts.",
+            name: "Red Velvet Mini Cake",
+            description: "A moist mini cake with classic red velvet flavor and a smooth, creamy finish.",
             category: "Pastries & Breads",
-            image: "../img/food1.jpg"
+            image: "../img/food11.jpg"
         },
         {
             id: 15,
-            name: "Banana Protein Bread",
-            description: "Moist banana bread with added protein and natural sweetness.",
+            name: "Chicken Floss Buns",
+            description: "Soft, fluffy buns filled and topped with savory chicken floss for a tasty, light snack.",
             category: "Pastries & Breads",
-            image: "../img/food2.jpg"
+            image: "../img/food12.jpg"
         },
         {
             id: 16,
-            name: "Whole Grain Protein Loaf",
-            description: "Hearty whole grain bread perfect for sandwiches.",
+            name: "Chocolate Rolls",
+            description: "Soft, fluffy rolls swirled with rich chocolate for a sweet, indulgent treat.",
             category: "Pastries & Breads",
-            image: "../img/food3.jpg"
+            image: "../img/food13.jpg"
         },
         {
             id: 17,
-            name: "Blueberry Protein Muffins",
-            description: "Moist muffins bursting with fresh blueberries and protein.",
+            name: "Beef Twisters",
+            description: "Savory, seasoned beef wrapped in a soft, twisted pastry for a hearty, flavorful bite.",
             category: "Pastries & Breads",
-            image: "../img/food1.jpg"
+            image: "../img/food14.jpg"
         },
-        {
-            id: 18,
-            name: "Apple Cinnamon Pastries",
-            description: "Flaky pastries filled with spiced apple cinnamon goodness.",
-            category: "Pastries & Breads",
-            image: "../img/food2.jpg"
-        },
-        {
-            id: 19,
-            name: "Pumpkin Spice Bread",
-            description: "Seasonal pumpkin bread with warm spices and protein.",
-            category: "Pastries & Breads",
-            image: "../img/food3.jpg"
-        },
-        {
-            id: 20,
-            name: "Cheese Danish Pastry",
-            description: "Creamy cheese filling in a flaky, protein-enriched pastry.",
-            category: "Pastries & Breads",
-            image: "../img/food1.jpg"
-        }
     ],
     beverages: [
         {
             id: 21,
-            name: "Protein Coffee",
-            description: "Smooth coffee with added protein for sustained energy.",
+            name: "Sugar Free Lemonade with Chia Seeds",
+            description: "A refreshing citrus drink boosted with chia for light hydration and texture.",
             category: "Protein Beverages",
-            image: "../img/food1.jpg"
+            image: "../img/food5.jpg"
         },
-        {
-            id: 22,
-            name: "Protein Shake",
-            description: "Creamy protein shake available in chocolate or vanilla.",
-            category: "Protein Beverages",
-            image: "../img/food2.jpg"
-        },
-        {
-            id: 23,
-            name: "Green Protein Smoothie",
-            description: "Refreshing green smoothie with spinach and protein.",
-            category: "Protein Beverages",
-            image: "../img/food3.jpg"
-        },
-        {
-            id: 24,
-            name: "Berry Blast Smoothie",
-            description: "Mixed berry smoothie packed with antioxidants and protein.",
-            category: "Protein Beverages",
-            image: "../img/food1.jpg"
-        },
-        {
-            id: 25,
-            name: "Matcha Protein Latte",
-            description: "Creamy matcha latte with added protein boost.",
-            category: "Protein Beverages",
-            image: "../img/food2.jpg"
-        },
-        {
-            id: 26,
-            name: "Chocolate Protein Milk",
-            description: "Rich chocolate milk with high-quality protein.",
-            category: "Protein Beverages",
-            image: "../img/food3.jpg"
-        },
-        {
-            id: 27,
-            name: "Tropical Paradise Smoothie",
-            description: "Tropical fruit blend with coconut and protein.",
-            category: "Protein Beverages",
-            image: "../img/food1.jpg"
-        },
-        {
-            id: 28,
-            name: "Vanilla Almond Shake",
-            description: "Creamy vanilla shake with almond milk and protein.",
-            category: "Protein Beverages",
-            image: "../img/food2.jpg"
-        },
-        {
-            id: 29,
-            name: "Iced Protein Coffee",
-            description: "Chilled coffee with protein, perfect for warm days.",
-            category: "Protein Beverages",
-            image: "../img/food3.jpg"
-        },
-        {
-            id: 30,
-            name: "Mango Protein Smoothie",
-            description: "Sweet mango smoothie with tropical flavors and protein.",
-            category: "Protein Beverages",
-            image: "../img/food1.jpg"
-        }
     ]
 };
 
@@ -289,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeAnimations();
 });
 
-// Best Sellers Carousel - IMPROVED MOBILE SUPPORT
+// Best Sellers Carousel
 function initializeCarousel() {
     const track = document.querySelector('.carousel-track');
     const slides = document.querySelectorAll('.carousel-slide');
@@ -300,9 +181,13 @@ function initializeCarousel() {
     let currentSlide = 0;
     const totalSlides = slides.length;
     let slideInterval;
+    let isAnimating = false;
     
     // Function to update carousel position
     function updateCarousel() {
+        if (isAnimating) return;
+        
+        isAnimating = true;
         const translateX = -currentSlide * 100;
         track.style.transform = `translateX(${translateX}%)`;
         
@@ -315,6 +200,11 @@ function initializeCarousel() {
         slides.forEach((slide, index) => {
             slide.classList.toggle('active', index === currentSlide);
         });
+        
+        // Reset animation flag after transition
+        setTimeout(() => {
+            isAnimating = false;
+        }, 500);
     }
     
     // Next slide function
@@ -330,49 +220,68 @@ function initializeCarousel() {
     }
     
     // Event listeners for buttons
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', () => {
+        if (!isAnimating) nextSlide();
+        resetAutoAdvance();
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        if (!isAnimating) prevSlide();
+        resetAutoAdvance();
+    });
     
     // Event listeners for dots
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            currentSlide = index;
-            updateCarousel();
-            resetAutoAdvance();
+            if (!isAnimating && currentSlide !== index) {
+                currentSlide = index;
+                updateCarousel();
+                resetAutoAdvance();
+            }
         });
     });
     
     // Touch swipe support for mobile
     let startX = 0;
     let endX = 0;
+    let isSwiping = false;
     
     track.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
+        isSwiping = true;
+        stopAutoAdvance();
     });
     
     track.addEventListener('touchmove', (e) => {
+        if (!isSwiping) return;
         endX = e.touches[0].clientX;
     });
     
     track.addEventListener('touchend', () => {
+        if (!isSwiping) return;
+        
         const diffX = startX - endX;
         const minSwipeDistance = 50;
         
         if (Math.abs(diffX) > minSwipeDistance) {
-            if (diffX > 0) {
+            if (diffX > 0 && !isAnimating) {
                 // Swipe left - next slide
                 nextSlide();
-            } else {
+            } else if (diffX < 0 && !isAnimating) {
                 // Swipe right - previous slide
                 prevSlide();
             }
-            resetAutoAdvance();
         }
+        
+        isSwiping = false;
+        setTimeout(startAutoAdvance, 3000);
     });
     
     // Auto-advance functionality
     function startAutoAdvance() {
-        slideInterval = setInterval(nextSlide, 5000);
+        slideInterval = setInterval(() => {
+            if (!isAnimating) nextSlide();
+        }, 5000);
     }
     
     function resetAutoAdvance() {
@@ -400,8 +309,12 @@ function initializeCarousel() {
     startAutoAdvance();
     
     // Handle window resize
+    let resizeTimeout;
     window.addEventListener('resize', () => {
-        updateCarousel();
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            updateCarousel();
+        }, 100);
     });
 }
 
@@ -467,7 +380,7 @@ function loadProducts(category, count) {
     updateLoadMoreButtonVisibility(category, products.length);
 }
 
-// Create product card HTML
+// Create product card HTML - NOW MATCHES BEST SELLER STRUCTURE
 function createProductCard(product) {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -483,12 +396,14 @@ function createProductCard(product) {
         <div class="product-info">
             <h3>${product.name}</h3>
             <p class="product-description">${product.description}</p>
-            <a href="https://www.facebook.com/profile.php?id=61556733159453" target="_blank" class="btn btn-primary btn-small order-now">
-                <span>Order Now</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                </svg>
-            </a>
+            <div class="card-actions">
+                <a href="https://www.facebook.com/profile.php?id=61556733159453" target="_blank" class="btn btn-primary btn-small order-now">
+                    <span>Order Now</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     `;
     
@@ -512,7 +427,7 @@ function updateLoadMoreButton(category) {
     const button = document.querySelector(`.load-more-btn[data-category="${category}"]`);
     if (!button) return;
     
-    const totalProducts = category === 'all' ? 30 : 10;
+    const totalProducts = getTotalProductsCount(category);
     const remaining = totalProducts - displayedProducts[category];
     
     if (remaining > 0) {
@@ -523,6 +438,14 @@ function updateLoadMoreButton(category) {
             </svg>
         `;
     }
+}
+
+// Get total products count for a category
+function getTotalProductsCount(category) {
+    if (category === 'all') {
+        return productsData.biscuits.length + productsData.pastries.length + productsData.beverages.length;
+    }
+    return productsData[category].length;
 }
 
 // Get category label for button text
@@ -614,3 +537,11 @@ window.addEventListener('orientationchange', () => {
         }
     }, 100);
 });
+
+// Error handling for images
+document.addEventListener('error', function(e) {
+    if (e.target.tagName === 'IMG' && e.target.classList.contains('product-img')) {
+        e.target.src = '../img/placeholder.jpg';
+        e.target.alt = 'Product image not available';
+    }
+}, true);
