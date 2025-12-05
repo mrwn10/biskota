@@ -17,5 +17,3 @@ A responsive bakery website showcasing protein-packed pastries and healthy treat
 - **CSS3** - Flexbox, Grid, CSS Variables
 - **JavaScript (ES6+)** - Vanilla JS, no frameworks
 - **Responsive Design** - Mobile, tablet, desktop
-
-## 📁 Project Structure
